@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 
 public class FifthFragment extends Fragment {
@@ -24,4 +25,13 @@ public class FifthFragment extends Fragment {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_fifth, container, false);
     }
+
+
+    @Override
+    public void setUserVisibleHint(boolean isVisibleToUser) {
+        super.setUserVisibleHint(isVisibleToUser);
+        if (isVisibleToUser)
+            Toast.makeText(MyApplication.context, "圣伯纳犬", Toast.LENGTH_SHORT).show();
+    }
+
 }
