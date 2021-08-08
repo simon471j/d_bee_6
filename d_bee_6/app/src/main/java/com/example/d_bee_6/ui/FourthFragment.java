@@ -1,4 +1,4 @@
-package com.example.d_bee_6;
+package com.example.d_bee_6.ui;
 
 import android.os.Bundle;
 
@@ -8,6 +8,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
+
+import com.example.d_bee_6.MyApplication;
+import com.example.d_bee_6.R;
 
 
 public class FourthFragment extends Fragment {

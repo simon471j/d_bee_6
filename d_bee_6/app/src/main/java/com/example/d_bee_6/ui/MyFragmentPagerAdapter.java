@@ -1,4 +1,4 @@
-package com.example.d_bee_6;
+package com.example.d_bee_6.ui;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;

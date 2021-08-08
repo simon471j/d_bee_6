@@ -1,4 +1,4 @@
-package com.example.d_bee_6;
+package com.example.d_bee_6.ui;
 
 import android.os.Bundle;
 
@@ -12,6 +12,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.d_bee_6.R;
 import com.google.android.material.tabs.TabLayout;
 
 import org.jetbrains.annotations.NotNull;
@@ -23,6 +24,11 @@ public class FirstFragment extends Fragment {
 
     TabLayout tabLayout;
     ViewPager viewPager;
+    String imagePath;
+
+    public FirstFragment(String imagePath) {
+        this.imagePath = imagePath;
+    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -50,7 +56,7 @@ public class FirstFragment extends Fragment {
     private void initView() {
         List<Fragment> fragmentList = new ArrayList<>();
         fragmentList.add(new FourthFragment());
-        fragmentList.add(new FifthFragment());
+        fragmentList.add(new FifthFragment(imagePath));
 //        set titles
         List<String> title = new ArrayList<>();
         title.add("第一页");
